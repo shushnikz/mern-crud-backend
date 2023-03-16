@@ -15,6 +15,10 @@ const userRoute = require("./routes/userRoute.js")
 
 app.use("/", userRoute)
 
+app.get("/", (req, res) => {
+    res.send("This is Mern Crud User")
+})
+
 const PORT = 8000;
 
 app.listen(PORT, () => {
